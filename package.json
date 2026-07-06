@@ -1,0 +1,32 @@
+{
+  "name": "fyp-blockchain",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "description": "Starter skeleton for blockchain-based IoT identity prototype",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy:local": "node scripts/deploy.js",
+    "start:middleware": "node middleware/server.js",
+    "dev:dashboard": "npm run dev --prefix dashboard",
+    "build:dashboard": "npm run build --prefix dashboard",
+    "lint:dashboard": "npm run lint --prefix dashboard",
+    "demo:client": "python clients/client_simulator.py",
+    "demo:chain": "npx hardhat node",
+    "demo:deploy": "node scripts/deploy.js",
+    "demo:middleware": "node middleware/server.js",
+    "demo:guide": "node scripts/demo-guide.js",
+    "demo:preflight": "node scripts/demo-preflight.js",
+    "demo:smoke": "node scripts/demo-smoke-test.js",
+    "test": "echo \"No tests configured yet\" && exit 0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^7.0.0",
+    "hardhat": "^3.3.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "ethers": "^6.16.0",
+    "express": "^5.2.1"
+  }
+}
